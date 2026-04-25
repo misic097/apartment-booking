@@ -60,3 +60,6 @@ backend/bookings.db
 ```
 
 The backend automatically creates the `bookings` table.
+
+https://misic097.github.io/apartment-booking/
+
