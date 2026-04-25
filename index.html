@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartment Booking</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">CityStay</a>
+      <nav>
+        <a href="#booking">Book</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="images/hero.jpg" alt="Modern apartment living area" />
+        <div class="hero-content">
+          <p class="eyebrow">Private apartment booking</p>
+          <h1>Book a calm city apartment for your next stay.</h1>
+          <p>Simple dates, instant availability checks, and a clean admin view for every reservation.</p>
+          <a class="button" href="#booking">Check availability</a>
+        </div>
+      </section>
+
+      <section class="showcase">
+        <article>
+          <img src="images/apartment.jpg" alt="Apartment interior" />
+          <h2>Bright Apartment</h2>
+          <p>Open living space with fast Wi-Fi, natural light, and a quiet work corner.</p>
+        </article>
+        <article>
+          <img src="images/room.jpg" alt="Apartment bedroom" />
+          <h2>Comfortable Room</h2>
+          <p>A restful bedroom setup designed for short weekend visits or longer stays.</p>
+        </article>
+        <article>
+          <img src="images/exterior.jpg" alt="Apartment building exterior" />
+          <h2>Central Location</h2>
+          <p>Easy access to restaurants, transit, groceries, and neighborhood essentials.</p>
+        </article>
+      </section>
+
+      <section class="booking-section" id="booking">
+        <div>
+          <p class="eyebrow">Reservation</p>
+          <h2>Request your stay</h2>
+          <p class="muted">Dates are checked against existing bookings before your request is saved.</p>
+        </div>
+
+        <form class="booking-form" id="bookingForm">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Check-in date
+            <input type="date" name="check_in" required />
+          </label>
+          <label>
+            Check-out date
+            <input type="date" name="check_out" required />
+          </label>
+          <button class="button" type="submit">Book apartment</button>
+          <p class="message" id="bookingMessage" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

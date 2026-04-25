@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartment Booking Admin</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">CityStay</a>
+      <nav>
+        <a href="index.html">Booking</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </header>
+
+    <main class="admin-page">
+      <section class="admin-hero">
+        <div>
+          <p class="eyebrow">Admin</p>
+          <h1>Booking management</h1>
+          <p class="muted">Review reservations and remove bookings that are no longer needed.</p>
+        </div>
+        <img src="images/apartment.jpg" alt="Apartment admin preview" />
+      </section>
+
+      <section class="table-card">
+        <div class="table-header">
+          <h2>Bookings</h2>
+          <button class="button secondary" id="refreshBookings" type="button">Refresh</button>
+        </div>
+        <p class="message" id="adminMessage" role="status"></p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Check-in</th>
+                <th>Check-out</th>
+                <th>Created</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="bookingsTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/admin.js"></script>
+  </body>
+</html>
